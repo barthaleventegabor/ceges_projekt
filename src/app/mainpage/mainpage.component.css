@@ -1,0 +1,142 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;         
+  padding: 0;    
+}
+
+.container{
+    /* background-color: rgba(0, 132, 255, 0.26); */
+    background-color: rgba(0, 132, 255, 0.1);
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mainheader{
+
+  flex-direction: column;
+  padding: 1rem 2rem;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+
+  
+  background: linear-gradient(
+    90deg, 
+    #a0e7ff 0%,   
+    #70d6ff 50%,  
+    #00b4d8 100%  
+  );
+
+  
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.loginbuttons{
+    padding: 19px;
+    font-size: 19px;
+    margin: 14px;
+    border: none;
+    border-radius: 9px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    
+}
+
+.loginbuttons:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    
+}
+
+
+#loginbuttonfirst{
+    /* background-color:rgb(65, 165, 223); */
+    background-color:rgb(16, 132, 199);
+    color: white;
+}
+
+
+
+#introduce{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 23px;
+    /* background-color: rgba(0, 183, 255, 0.192); */
+    border-radius: 11px;
+    text-align: left;
+}
+
+#introduceh2{
+    margin-top: 55px;
+    /* background-color: rgba(0, 183, 255, 0.452); */
+    border-radius: 11px;
+    text-align: left;
+     padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.attentioncardsdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px; 
+  padding: 20px;
+}
+
+.attentioncards {
+  display: flex;             
+  align-items: center;       
+  gap: 10px;                 
+  /* background-color: #70d6ff; */
+  background-color: #70d6ff7e;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 70px;
+  
+}
+
+.cardimages {
+  width: 50px;          
+  height: auto;
+  
+}
+
+.ourselvesbtn {
+    display: inline-flex;          
+    align-items: center;           
+    gap: 8px;                      
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(90deg, #70d6ff, #00b4d8);
+    border: none;
+    border-radius: 12px;          
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ourselvesbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.lightbulbpic {
+    width: 20px;      
+    height: auto;
+    display: block;
+}
+
+
+
