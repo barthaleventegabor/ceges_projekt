@@ -1,11 +1,12 @@
+// src/app/mainpage/mainpage.component.ts
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-mainpage',
-  imports: [],
+  standalone: true,        // ha nincs, lásd lent a konverziót
+  imports: [RouterLink],
   templateUrl: './mainpage.component.html',
-  styleUrl: './mainpage.component.css'
+  styleUrls: ['./mainpage.component.css'],
 })
-export class MainpageComponent {
-
-}
+export class MainpageComponent {}
