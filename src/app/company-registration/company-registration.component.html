@@ -1,0 +1,40 @@
+<div class="calculator-card">
+  <h3 class="calculator-title">{{ title }}</h3>
+
+  <div class="calculator-group">
+    <label>{{ companyNameLabel }}</label>
+    <input type="text" [(ngModel)]="companyName" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ taxNumberLabel }}</label>
+    <input type="text" [(ngModel)]="taxNumber" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ addressLabel }}</label>
+    <input type="text" [(ngModel)]="address" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ activityLabel }}</label>
+    <input type="text" [(ngModel)]="activity" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ contactNameLabel }}</label>
+    <input type="text" [(ngModel)]="contactName" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ contactEmailLabel }}</label>
+    <input type="text" [(ngModel)]="contactEmail" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ contactPhoneLabel }}</label>
+    <input type="text" [(ngModel)]="contactPhone" />
+  </div>
+
+  <button (click)="submit()">{{ buttonText }}</button>
+</div>

@@ -1,27 +1,77 @@
-<!-- <button routerLink="/mainpage">dad</button> -->
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
 
-<header class="mainheader">
-    <h1>{{title}}</h1>
-    <button routerLink="/mainpage" class="backtomain">
-        <img src="../pics/back.png" class="backtomainpic">
-        Vissza a főoldalra
+    <header class="mainheader">
+        <h1>{{title}}</h1>
+        <button routerLink="/mainpage" class="backtomain">
+            <img src="../pics/back.png" class="backtomainpic">
+            Vissza a főoldalra
 
-    </button>
-</header>
-<div class="container">
-    <h2 class="introduceh2 ">Árkalkuláció</h2>
-    <p class="introduce">Egyszerű és gyors árkalkuláció, mely az adott cég dolgozóihoz és a dolgzókat kezelő
-    személyek létszmához igazodik. Ezzel transzparens módon láthatja árazásunk, így biztos lehet benne hogy
-    egyetlen cég sem kap egyedi, jobb ajánlatokat.</p>
+        </button>
+    </header>
+    <div class="container">
+        <h2 class="introduceh2 ">Árkalkuláció</h2>
+        <p class="introduce">Egyszerű és gyors árkalkuláció, mely az adott cég dolgozóihoz és a dolgzókat kezelő
+        személyek létszmához igazodik. Ezzel transzparens módon láthatja árazásunk, így biztos lehet benne hogy
+        egyetlen cég sem kap egyedi, jobb ajánlatokat.</p>
 
-    <app-price-calculator
-    title="Árkalkuláció"
-    firstLabel="Dolgozók száma"
-    secondLabel="Adminok száma"
-    buttonText="Számold ki!"
-    [calculateFn]="myCalculation"
-    ></app-price-calculator>
+        <app-price-calculator
+        title="Árkalkuláció"
+        firstLabel="Dolgozók száma"
+        secondLabel="Adminok száma"
+        buttonText="Számold ki!"
+        [calculateFn]="myCalculation"
+        ></app-price-calculator>
+
+        <h2 class="introduceh2 ">Csatlakozási feltételeink</h2>
+        <div class="conditions introduce">
+            <p>
+                <img src="../pics/checklist.png" class="conditionspics">
+                A vállalatnak legalább 5 alkalmazotti, és minimum 1 admin jogosultságú felhasználóval kell rendelekeznie.    
+            </p>
+            <p>
+                <img src="../pics/checklist.png" class="conditionspics">
+                A csatlakozó szervezetnek hivatalosan bejegyzett gazdasági társaságnak kell lennie.    
+            </p>
+            <p>
+                <img src="../pics/checklist.png" class="conditionspics">
+                Érvényes adószámmal és cégjegyzékszámmal kell rendelkeznie.    
+            </p>
+            <p>
+                <img src="../pics/checklist.png" class="conditionspics">
+                Az előfizetési díjat a csatlakozást követően, a szerződéskötéskor rendezni kell.    
+            </p>
+            <p>
+                <img src="../pics/checklist.png" class="conditionspics">
+                A cég köteles a saját dolgozóinak adatait valósan és naprakészen kezelni.  
+            </p>
+            <p>
+                <img src="../pics/checklist.png" class="conditionspics">
+                A cég köteles kijelölni egy rendszergazdát vagy kapcsolattartót, aki a felhasználókat kezeli. 
+            </p>
+        </div>
+        <app-company-registration 
+            title="Csatlakozási kérelem"
+            companyNameLabel="Vállalat neve"
+            taxNumberLabel="Cégazonosító"
+            addressLabel="Székhely"
+            activityLabel="Profil"
+            contactNameLabel="Kapcsolattartó"
+            contactEmailLabel="Kapcsolattartó e-mail"
+            contactPhoneLabel="Kapcsolattartó telefon"
+            buttonText="Fellendítem vállalkozásom!">
+        </app-company-registration>
+        <p class="introduce afterregistration">Munkatársaink sikeres kérelem esetén 1 munkanapon belül felveszik önnel a kapcsolat!</p>
 
 
 
-</div>
+    </div>
+</body>
+</html>

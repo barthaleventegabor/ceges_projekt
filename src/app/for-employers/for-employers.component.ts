@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { PriceCalculatorComponent } from '../price-calculator/price-calculator.component';
+import { CompanyRegistrationComponent } from '../company-registration/company-registration.component';
 
 
 @Component({
   selector: 'app-for-employers',
-  imports: [RouterLink,FormsModule,CommonModule,PriceCalculatorComponent],
+  imports: [RouterLink,FormsModule,CommonModule,PriceCalculatorComponent,CompanyRegistrationComponent],
   templateUrl: './for-employers.component.html',
   styleUrl: './for-employers.component.css'
 })
