@@ -2,6 +2,11 @@
 
 <header class="mainheader">
     <h1>{{title}}</h1>
+    <button routerLink="/mainpage" class="backtomain">
+        <img src="../pics/back.png" class="backtomainpic">
+        Vissza a főoldalra
+
+    </button>
 </header>
 <div class="container">
     <h2 class="introduceh2 ">Árkalkuláció</h2>
@@ -13,7 +18,7 @@
     title="Árkalkuláció"
     firstLabel="Dolgozók száma"
     secondLabel="Adminok száma"
-    buttonText="Számold ki"
+    buttonText="Számold ki!"
     [calculateFn]="myCalculation"
     ></app-price-calculator>
 

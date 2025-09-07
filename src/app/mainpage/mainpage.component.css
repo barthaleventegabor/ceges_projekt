@@ -23,6 +23,12 @@
     color: white;
 }
 
+#loginbuttonsecond{
+    /* background-color:rgb(65, 165, 223); */
+    
+    color: black;
+}
+
 
 .attentioncardsdiv {
   display: grid;
@@ -46,11 +52,7 @@
   
 }
 
-.cardimages {
-  width: 50px;          
-  height: auto;
-  
-}
+
 
 .ourselvesbtn {
     display: inline-flex;          
@@ -76,6 +78,12 @@
     width: 20px;      
     height: auto;
     display: block;
+}
+
+.cardimages {
+  width: 50px;          
+  height: auto;
+  
 }
 
 
