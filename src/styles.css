@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;         
+  padding: 0;    
+}
+
+.container{
+    /* background-color: rgba(0, 132, 255, 0.26); */
+    background-color: rgba(0, 132, 255, 0.1);
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mainheader{
+
+  flex-direction: column;
+  padding: 1rem 2rem;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+
+  
+  background: linear-gradient(
+    90deg, 
+    #a0e7ff 0%,   
+    #70d6ff 50%,  
+    #00b4d8 100%  
+  );
+
+  
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.introduce{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 23px;
+    /* background-color: rgba(0, 183, 255, 0.192); */
+    border-radius: 11px;
+    text-align: left;
+}
+
+.introduceh2{
+    margin-top: 55px;
+    /* background-color: rgba(0, 183, 255, 0.452); */
+    border-radius: 11px;
+    text-align: left;
+     padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+}
+
+

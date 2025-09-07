@@ -1,1 +1,22 @@
-<p>for-employers works!</p>
+<!-- <button routerLink="/mainpage">dad</button> -->
+
+<header class="mainheader">
+    <h1>{{title}}</h1>
+</header>
+<div class="container">
+    <h2 class="introduceh2 ">Árkalkuláció</h2>
+    <p class="introduce">Egyszerű és gyors árkalkuláció, mely az adott cég dolgozóihoz és a dolgzókat kezelő
+    személyek létszmához igazodik. Ezzel transzparens módon láthatja árazásunk, így biztos lehet benne hogy
+    egyetlen cég sem kap egyedi, jobb ajánlatokat.</p>
+
+    <app-price-calculator
+    title="Árkalkuláció"
+    firstLabel="Dolgozók száma"
+    secondLabel="Adminok száma"
+    buttonText="Számold ki"
+    [calculateFn]="myCalculation"
+    ></app-price-calculator>
+
+
+
+</div>

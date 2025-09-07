@@ -1,0 +1,91 @@
+.calculator-card * {
+  box-sizing: border-box;
+}
+
+
+.calculator-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s;
+  
+}
+
+.calculator-card:hover {
+  transform: translateY(-3px);
+}
+
+.calculator-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+.calculator-group {
+  margin-bottom: 20px;
+}
+
+.calculator-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.calculator-group input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.calculator-group input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0056b3, #0096c7);
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+div[ng-reflect-ng-if] {
+  margin-top: 20px;
+  text-align: center;
+}
+
+div[ng-reflect-ng-if] p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  background: #e0f7fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+}

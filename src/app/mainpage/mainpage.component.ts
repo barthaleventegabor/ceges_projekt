@@ -9,4 +9,6 @@ import { RouterLink } from '@angular/router';
   templateUrl: './mainpage.component.html',
   styleUrls: ['./mainpage.component.css'],
 })
-export class MainpageComponent {}
+export class MainpageComponent {
+  title : string = "Vállalatirányítás egyszerűen."
+}

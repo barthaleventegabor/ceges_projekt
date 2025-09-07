@@ -1,0 +1,19 @@
+<div class="calculator-card">
+  <h3 class="calculator-title">{{ title }}</h3>
+
+  <div class="calculator-group">
+    <label>{{ firstLabel }}</label>
+    <input type="number" [(ngModel)]="firstValue" min="0" />
+  </div>
+
+  <div class="calculator-group">
+    <label>{{ secondLabel }}</label>
+    <input type="number" [(ngModel)]="secondValue" min="0" />
+  </div>
+
+  <button (click)="calculate()">{{ buttonText }}</button>
+
+  <div *ngIf="result !== null">
+    <p>Eredmény: <strong>{{ result }}</strong></p>
+  </div>
+</div>
